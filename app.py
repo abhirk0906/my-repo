@@ -100,7 +100,7 @@ def dashboard():
             st.success("Sale added successfully!")
 
     elif menu == "Add Payment":
-        st.header("💰 Add Payment")
+        st.header("Add Payment")
 
         if user["role"] == "Super Admin":
             cursor.execute("SELECT sale_id FROM customer_sales WHERE status='Open'")
